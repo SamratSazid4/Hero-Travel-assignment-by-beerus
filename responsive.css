@@ -1,0 +1,26 @@
+/*Extra small devices (portrait phones, less than 576px)*/
+@media screen and (max-width: 600px) {
+    .container{
+        padding: 0 20px;
+    }
+    .main_menu{
+        padding: 30px 0;
+    }
+    .menu_icon{
+        display: show;
+    }
+    .logo img{
+        width: 16%;
+        padding: 0;
+    }
+    .logo h3{
+        font-size: 22px;
+        margin: -2px 0 0 -20px;
+    }
+    
+    .menu ul li {
+        display: none;
+    }
+    
+
+}
