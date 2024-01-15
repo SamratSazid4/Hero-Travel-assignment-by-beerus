@@ -21,6 +21,31 @@
     .menu ul li {
         display: none;
     }
+    /* banner start */
+    .banner_main {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+    .banner_text{
+        padding: 0 35px;
+    }
+    .banner_text h1{
+        font-size: 22px;
+    }
+    .banner_text p{
+        font-size: 14px;
+
+    }
+    .ban_bot{
+        display: block;
+        width: 85%;
+        text-align: center;
+    }
+
+
+
+
+    /* banner END */
     
 
 }
