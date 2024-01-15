@@ -172,3 +172,63 @@ a{
 }
 
 /* banner end */
+
+/* tour start */
+#tour{
+    padding: 100px 0;
+}
+.tour_main{
+    display: flex;
+ 
+}
+.tour_text ul li{
+    list-style:disc;
+    
+}
+.tour_text ul li p{
+    padding-bottom:16px !important;
+    
+}
+.tour_text ul{
+    padding-left: 20px;
+}
+.tour_text h1{
+    color: #131318;
+    font-family: "Mulish", sans-serif;
+    font-size: 45px;
+    font-weight: 800;
+    padding-bottom: 24px;
+}
+.tour_text p{
+    color: rgba(19, 19, 24, 0.70);
+    font-family: "Mulish", sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-right: 312px;
+    padding-bottom: 24px;
+}
+.tour_text{
+    width: 60%;
+}
+.tour_img{
+    width: 40%;
+}
+.tour_img img{
+    width: 100%;
+    
+}
+.tour_btn{
+    padding-top: 35px;
+}
+.tour_btn a{
+    color: #FFF;
+    text-align: center;
+    font-family: "Mulish", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 8px;
+    background: #FF5400;
+    padding: 14px 34px;
+}
+/* tour end */
