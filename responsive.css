@@ -1,51 +1,269 @@
 /*Extra small devices (portrait phones, less than 576px)*/
 @media screen and (max-width: 600px) {
-    .container{
-        padding: 0 20px;
+    .container {
+      margin: 0 20px;
     }
-    .main_menu{
-        padding: 30px 0;
+    .logo img {
+      width: 16%;
     }
-    .menu_icon{
-        display: show;
+  
+    .logo h3 {
+      font-size: 22px;
     }
-    .logo img{
-        width: 16%;
-        padding: 0;
+  
+    .main_menu {
+      padding-top: 30px;
     }
-    .logo h3{
-        font-size: 22px;
-        margin: -2px 0 0 -20px;
+    .menu_icon {
+      display: show;
     }
-    
+  
+    .toggleButton {
+      font-size: 20px;
+      border: none;
+      display: block !important ;
+    }
+  
+    .toggleButton:hover {
+      background-color: transparent;
+    }
+  
+    .menu {
+      background-color: #e6895a;
+      height: 0;
+      left: 20px;
+      top: 70px;
+      right: 20px;
+      overflow: hidden;
+      transition: 0.3s;
+      position: fixed;
+      z-index: 999;
+      transition: 0.3s;
+    }
+  
+    .c_height {
+      height: 220px !important;
+      transition: 0.3s;
+    }
+    .menu ul {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
     .menu ul li {
-        display: none;
+      margin: 10px 0;
     }
+  
+    .menu ul li a {
+      color: #fff;
+    }
+    /* menu end  */
+  
     /* banner start */
-    .banner_main {
-        padding-top: 32px;
-        padding-bottom: 32px;
+    .banner{
+        padding: 0 !important;
     }
-    .banner_text{
-        padding: 0 35px;
+    .banner_text {
+      padding: 0 10px;
     }
-    .banner_text h1{
-        font-size: 22px;
+    .banner_text h1 {
+      font-size: 30px;
     }
-    .banner_text p{
-        font-size: 14px;
+  
+    .banner_text p {
+      padding: 0;
+    }
+  
+    .ban_form {
+      margin-top: 30px;
+      width: 80%;
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .ban_form input,
+    .ban_form select,
+    .ban_form button {
+      height: 50px;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .ban_btn {
+      color: #fff !important;
+      background-color: #ff5400;
+    }
+    .ban_btn i {
+      margin-right: 10px;
+    }
+    /* banner end */
+  
+    /* tour start */
+    #tour{
+        margin-top:-50px;
+    }
+    .tour_main {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .tour_text {
+      margin-right: 0;
+    }
+  
+    .tour_text h1 {
+      font-size: 20px;
+    }
+    .tour_text p {
+        font-size: 16px;
+      }
+  
+    .tour_img img {
+      margin-top: 30px;
+      width: 100%;
+    }
+  
+    /* tour end */
 
+    /* choose  start*/
+    #choose{
+        padding-top:25px ;
     }
-    .ban_bot{
-        display: block;
-        width: 85%;
+    .cho_text{
+        padding: 0;
         text-align: center;
     }
+    .cho_text h1{
+        font-size: 20px;
+    }
+    .cho_text p{
+    padding-top: 14px;
 
+    }
+    .cho_info{
+        flex-wrap: wrap;
+    }
+    .info1{
+        width: 100%;
+    }
+    .info2{
 
+        width: 100%;
+    }
+    .info3{
+        width: 100%;
+    }
+    .info1 h1,.info2 h1,.info3 h1 {
+        font-size: 20px;
+        padding: 16px 0 16px 0;
+    }
+    .info1 p,.info2 p,.info3 p{
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .info1 img{
+        width: 20%;
+    }
+    .info2 img{
+        width: 20%;
+    }
+    .info3 img{
+        width: 20%;
+    }
+    /* choose  end*/
 
+    /* discount start  */
 
-    /* banner END */
-    
+#discount{
+    padding-top: 24px;
+}
+.deal_text h1{
+    font-size: 20px;
+}
+.deal_text{
+    padding: 0;
+}
+.deal_text p{
+    font-size: 14px;
+    padding: 16px 0;
+}
+.discount1{
+    background: url(./images/Group\ 39.png) no-repeat center / cover;
+    padding: 56px 0;
+    border-radius: 8px;
+}
+
+.dis_text{
+    width: 90%;
+    margin: 0 auto;
+    padding: 25px 25px;
+}
+.dis_text_2{
+    width: 90%;
+    margin: 0 auto;
+    padding: 25px 25px;
+}
+.dis_text h1,.dis_text_2 h1 {
+    font-size: 20px;
+}
+.dis_text p,.dis_text_2 p{
+    padding: 16px 0;
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
 
 }
+p.cash {
+    color: #FF5400;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 24px;
+
+}
+.dis_text a,.dis_text_2 a{
+    color: #fff ;
+    padding: 14px 25px;
+    margin-top: 24px;
+    background-color:#FF5400;
+    border-radius: 8px;
+}
+.dis_icon i{
+    padding-right: 24px;
+    padding-bottom: 24px;
+    color:#FF5400 ;
+    margin-right: 10px;
+}
+.dis_icon i span{
+    color: #5A5A5D; 
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+
+.discount2{
+    background: url(./images/Group\ 40.png) no-repeat center / cover;
+    padding: 56px 0;
+    border-radius: 8px;
+    margin: 24px 0;
+}
+.pack_btn{
+    padding: 47px 0;
+    text-align: center;
+}
+.pack_btn a{
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 8px;
+    background: #FF5400;
+    padding: 14px 22px;
+}
+/* discount end */
+
+
+  }
+  

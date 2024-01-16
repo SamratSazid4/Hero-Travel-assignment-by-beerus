@@ -1,234 +1,422 @@
-*{
+* {
+    font-family: "Mulish", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-img{
-    vertical-align: middle;
-}
-
-ul{
-    list-style: none;
-
-}
+  }
+  
+  .container {
+    margin: 0 100px;
+    overflow: hidden;
+  }
+  
 a{
     text-decoration: none;
 }
-
-.container{
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 135px;
-    overflow: hidden;
-
-}
-
-
-
-/* nav start */
-/* .menu_icon{
-    display: hidden;
-} */
-
-
-.main_menu .container{
+  .main_menu {
+    padding: 50px 0;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-}
-.main_menu{
-    padding: 60px 0;
-}
-/* .logo{
+  }
+  
+  .logo {
     display: flex;
-} */
-.logo h3{
-    float: right;
+    align-items: center;
+  }
+  
+  .logo img {
+    margin-right: 10px;
+  }
+  .logo h3{
     color: #131318;
-    font-family: "Mulish", sans-serif;
     font-size: 36px;
     font-weight: 800;
-}
-.logo img{
-    padding-right:16px;
-}
-.logo h3 span{
+  }
+  .logo h3 span{
     color: #FF5400;
-}
-
-.menu ul li a{
-    color: #424247;
-    font-family: "Mulish", sans-serif;
+  }
+  .menu_btn {
+    display: none;
+  }
+  
+  .menu ul {
+    display: flex;
+  }
+  
+  .menu ul li {
+    display: flex;
+    margin-left: 44px;
+  }
+  
+  .menu ul li a {
     font-size: 18px;
+    text-decoration: none;
+    color: #000;
     font-weight: 600;
-    margin: 0 0 0 44px;
-}
-.menu ul li a:hover{
+  }
+  .menu ul li a:hover{
     color: #FF5400;
-    transition: .7s;
-}
-.menu ul li{
-    display: inline-block;
-}
-
-
-/* nav END */
-
-/* banner start */
-
-.banner_main {
+    transition: .4s;
+  }
+  /* banner start */
+  #banner{
+    padding-bottom: 100px;
+  }
+  
+  .banner_main {
     background: url(./images/Group\ 13\ .png) no-repeat center / cover;
-    padding-top: 106px;
-    padding-bottom: 106px;
-    border-radius: 16px;
+    padding: 100px 0;
     position: relative;
     z-index: 1;
-}
-
-.banner_main::after{
+    border-radius: 8px;
+  }
+  
+  .banner_main::after {
     position: absolute;
-    content: '';
+    content: "";
     height: 100%;
     width: 100%;
-    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%);
+    border-radius: 8px;
+    background: linear-gradient(
+      180deg,
+      rgba(19, 19, 24, 0.8) 0%,
+      rgba(19, 19, 24, 0) 100%
+    );
     top: 0;
     left: 0;
     z-index: -1;
-
-}
-.banner_text{
+  }
+  
+  .banner_text {
     text-align: center;
     padding: 0 450px;
-}
-.banner_text h1{
-    color: #FFF;
-    font-family: "Mulish", sans-serif;
+  }
+  .banner_text h1 {
+    color: #fff;
     font-size: 64px;
     font-weight: 800;
-
-}
-.banner_text p{
-    color: #FFF;
-    text-align: center;
-    font-family: "Mulish", sans-serif;
+  }
+  
+  .banner_text p {
+    color: #fff;
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
-    padding: 24px 0 48px 0;
-}
-
-::placeholder{
-    
-    color: rgba(19, 19, 24, 0.50);
-    font-family: "Mulish", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-}
-.ban_form input[type=text]{
-    border-radius: 8px;
-    padding: 16px 0 16px 16px;
-}
-#text{
-    border-radius: 8px;
-    color: rgba(19, 19, 24, 0.50);
-    font-family: "Mulish", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    padding: 12px 30px 16px 16px;
-}
-.ban_bot{
-    display: flex;
-    justify-content:center;
-    border-radius: 8px;
-    background: rgba(255, 255, 255, 0.30);
-    padding: 16px 0 16px 16px;
-    width: 47%;
+    padding: 24px 0 48px;
+  }
+  
+  .ban_form {
     margin: 0 auto;
-
-
-}
-.ban_btn{
-    padding-top:16px;
-    padding-right: 20px;
-}
- .ban_btn a{
+    width: 42%;
     border-radius: 8px;
-    color: #FFF;
-    text-align: center;
-    font-family: "Mulish", sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    background-color: #FF5400;
-    padding: 16px 35px 16px 30px;
-}
-.ban_btn i{
-        padding-right: 9px;
-}
-.when{
-    margin: 0 24px;
-}
-.select_type{
-    margin-right:24px;
-}
-
-/* banner end */
-
-/* tour start */
-#tour{
-    padding: 100px 0;
-}
-.tour_main{
     display: flex;
- 
-}
-.tour_text ul li{
-    list-style:disc;
-    
-}
-.tour_text ul li p{
-    padding-bottom:16px !important;
-    
-}
-.tour_text ul{
+    align-items: center;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 20px 10px;
+    justify-content: center;
+  }
+  
+  .ban_form input,
+  .ban_form select,
+  .ban_form button {
+    height: 50px;
+    width: 150px;
+    margin: 0 10px;
+    padding: 5px 10px;
+    color: rgba(19, 19, 24, 0.5);
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 8px;
+    border: none;
+  }
+  
+  .ban_btn {
+    color: #fff !important;
+    background-color: #ff5400;
+  }
+  .ban_btn i {
+    margin-right: 10px;
+  }
+  /* banner end */
+  
+  /* tour start */
+  #tour{
+    padding-bottom: 100px;
+  }
+  .tour_main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .tour_text {
+    margin-right: 295px;
+  }
+  
+  .tour_text ul li {
+    list-style: disc;
+  }
+  
+  .tour_text ul li p {
+    padding-bottom: 16px !important;
+  }
+  .tour_text ul {
     padding-left: 20px;
-}
-.tour_text h1{
+  }
+  .tour_text h1 {
     color: #131318;
-    font-family: "Mulish", sans-serif;
     font-size: 45px;
     font-weight: 800;
     padding-bottom: 24px;
-}
-.tour_text p{
-    color: rgba(19, 19, 24, 0.70);
-    font-family: "Mulish", sans-serif;
+  }
+  .tour_text p {
+    color: rgba(19, 19, 24, 0.7);
     font-size: 19px;
     font-weight: 400;
+  }
+  
+  .tour_btn {
+      margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 180px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 8px;
+    background: #ff5400;
+  }
+  /* tour end */
+
+  /* Destination start */
+  .destination-contents{
+    text-align: center;
+    padding: 0 479px;
+  }
+  .destination-contents h1{
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+    
+
+  }
+  .destination-contents p{
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 16px;
+    font-weight: 400;
     line-height: 26px;
-    margin-right: 312px;
-    padding-bottom: 24px;
+    padding-bottom: 47px;
+  }
+.destination-images{
+    display: grid;
+    gap: 2%;
+} 
+ .destination-images-row{ 
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+} 
+.destination-image{
+    position: relative;
+    align-items: center;
 }
-.tour_text{
-    width: 60%;
-}
-.tour_img{
-    width: 40%;
-}
-.tour_img img{
+.destination-image img{
     width: 100%;
+}
+.destination-image .image-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 200%;
+}
+
+  /* Destination end */
+
+/* choose  start*/
+#choose{
+    padding-top: 100px;
+}
+.cho_text{
+    padding: 0 566px ;
+    text-align: center;
+}
+.cho_text h1{
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+}
+.cho_text p{
+    color: rgba(19, 19, 24, 0.70);
+    padding-top: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+.cho_info{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 47px 0 24px;
+}
+.info1{
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    padding: 32px;
+    width: 50%;
+}
+.info2{
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+    padding: 32px;
+    width: 50%;
+}
+.info3{
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+    width: 50%;
+    padding: 32px;
+    margin: 0 auto;
     
 }
-.tour_btn{
-    padding-top: 35px;
+.info1 h1,.info2 h1,.info3 h1 {
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+    padding: 32px 0 16px 0;
 }
-.tour_btn a{
+.info1 p,.info2 p,.info3 p{
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+.info1 img{
+    width: 10%;
+}
+.info2 img{
+    width: 10%;
+}
+.info3 img{
+    width: 10%;
+}
+/* choose End */
+
+/* discount start  */
+
+#discount{
+    padding-top: 100px;
+}
+.deal_text h1{
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+}
+.deal_text{
+    text-align: center;
+    padding: 0 530px;
+}
+.deal_text p{
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    padding: 24px 0 47px;
+}
+.discount1{
+    background: url(./images/Group\ 39.png) no-repeat center / cover;
+    padding: 56px 0;
+    border-radius: 8px;
+}
+
+.dis_text{
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    padding: 50px 50px 50px 50px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: 50px;
+}
+.dis_text_2{
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    padding: 50px 50px 50px 50px;
+    width: 40%;
+    margin-right: auto;
+    margin-left: 50px;
+}
+.dis_text h1,.dis_text_2 h1 {
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+
+}
+.dis_text p,.dis_text_2 p{
+    padding: 16px 0;
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+
+}
+p.cash {
+    color: #FF5400;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 24px;
+
+}
+.dis_text a,.dis_text_2 a{
+    color: #fff ;
+    padding: 14px 25px;
+    margin-top: 24px;
+    background-color:#FF5400;
+    border-radius: 8px;
+}
+.dis_icon i{
+    padding-right: 24px;
+    padding-bottom: 24px;
+    color:#FF5400 ;
+    margin-right: 10px;
+}
+.dis_icon i span{
+    color: #5A5A5D; 
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+
+.discount2{
+    background: url(./images/Group\ 40.png) no-repeat center / cover;
+    padding: 56px 0;
+    border-radius: 8px;
+    margin: 24px 0;
+}
+.pack_btn{
+    padding: 47px 0;
+    text-align: center;
+}
+.pack_btn a{
     color: #FFF;
     text-align: center;
-    font-family: "Mulish", sans-serif;
     font-size: 20px;
     font-weight: 800;
     border-radius: 8px;
     background: #FF5400;
-    padding: 14px 34px;
+    padding: 14px 22px;
 }
-/* tour end */
+/* discount end */
+  
