@@ -125,6 +125,30 @@
     }
   
     /* tour end */
+    /* destination start */
+    .destination-contents{
+      padding: 0;
+    }
+    .destination-contents h1{
+      font-size: 20px;
+    }
+    .destination-contents p{
+
+      font-size: 14px;
+ 
+    }
+    .row {
+      flex-direction: column;
+
+    
+    }
+    .col-50, .col-30,.col-35, .col-40, .col-25, .col-65 {
+      width: 100% !important;
+      height: 200px; 
+      margin-bottom: 20px;
+  }
+
+    /* destination end */
 
     /* choose  start*/
     #choose{

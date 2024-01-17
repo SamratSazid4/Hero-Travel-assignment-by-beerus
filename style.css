@@ -193,6 +193,7 @@ a{
   /* tour end */
 
   /* Destination start */
+  
   .destination-contents{
     text-align: center;
     padding: 0 479px;
@@ -211,31 +212,53 @@ a{
     line-height: 26px;
     padding-bottom: 47px;
   }
-.destination-images{
-    display: grid;
-    gap: 2%;
-} 
- .destination-images-row{ 
+  .row {
     display: flex;
-    justify-content: center;
-    gap: 2%;
-} 
-.destination-image{
-    position: relative;
-    align-items: center;
-}
-.destination-image img{
+    justify-content: space-between;
     width: 100%;
-}
-.destination-image .image-text{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-size: 200%;
+    margin-bottom: 2%;
+    gap: 2%;
 }
 
+.row img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+    height: 100%;
+}
+
+.col-50 {
+    /* flex: 1; */
+    width: 50%;
+}
+
+.col-30 {
+    /* flex: 1; */
+    width: 30%;
+}
+.col-35 {
+  /* flex: 1; */
+  width: 35%;
+}
+
+.col-40 {
+    /* flex: 1; */
+    width: 40%;
+}
+
+.col-25 {
+    /* flex: 1; */
+    width: 25%;
+}
+
+.col-65 {
+    /* flex: 1; */
+    width: 65%;
+}
+.col-50, .col-30,.col-35, .col-40, .col-25, .col-65 {
+    height: 280px; 
+    overflow: hidden;  
+}
   /* Destination end */
 
 /* choose  start*/
@@ -419,4 +442,64 @@ p.cash {
     padding: 14px 22px;
 }
 /* discount end */
+
+/* newsletetr start */
+.newsletter{
+  display: flex;
+  width: 100%;
+}
+.news_card{
+  border: 1px solid #FF5400;
+  border-radius: 10px;
+  margin-right: 40px;
+  height: 422px;
+  width: 35%;
+  padding: 40px;
+}
+.news_card input{
+  border: none;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 52px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: rgba(19, 19, 24, 0.05);
+}
+.news_card h3{
+  color: #131318;
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom:20px;
+}
+.news_card p{
+  color: #5A5A5D;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.news_card button{
+  display: block;
+  margin: 0 auto;
+  color: #FFF;
+  border: none;
+  width: 100%;
+  height: 52px;
+  border-radius: 8px;
+  background: #FF5400;
+  font-size: 20px;
+  
+
+}
+.news_img{
+  height: 422px;
+  width: 65%;
+}
+.news_img img{
+width: 100%;
+object-fit: cover;
+  
+}
+
+/* newsletetr end */
   
